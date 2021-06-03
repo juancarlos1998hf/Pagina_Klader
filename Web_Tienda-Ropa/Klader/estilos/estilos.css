@@ -1,0 +1,119 @@
+
+body{
+    background-color: rgb(192, 240, 241);
+}
+
+
+.site-header.Inicio{
+    
+    background: url(../Imagenes/mano.jpeg);
+    height: 100vh; /* viewport height*/
+    min-height: 60rem; /* lo minimo que ocupa son 600 pixeles*/
+    background-position: center;
+    background-size: cover /*tamaño y alto que tenga disponible*/;
+    position: relative;
+}
+
+.site-header.Inicio::before{
+    content:'';
+	position: absolute;
+    top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	background-color: rgba(0,0,0,0.5);
+    
+}
+
+
+.contenedor{
+    max-width: 1000px;
+    margin: 0 auto; /*centra*/
+    padding: 20px;/*relleno hacia dentro*/
+}
+
+.tamaño-logo{
+    width:10rem;
+    height: 10rem;
+    opacity: 0.5;
+
+}
+
+.navegacion{
+    display: flex;
+    margin-right: 0.2rem;
+    justify-content: space-between;
+}
+
+/* menu */
+
+#menu ul {
+ list-style:none;
+ margin:0;
+ padding:0;
+}
+
+/* items del menu */
+
+#menu ul li {
+ background-color: #000000;
+}
+
+/* enlaces del menu */
+
+#menu ul a {
+    display:block;
+    color:#fff;
+    text-decoration:none;
+    font-weight:400;
+    font-size:15px;
+    padding:10px;
+    font-family:"HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    text-transform:uppercase;
+    letter-spacing:1px;
+}
+
+/* items del menu */
+
+#menu ul li {
+ position:relative;
+ float:left;
+ margin:0;
+ padding:0;
+}
+
+/* efecto al pasar el ratón por los items del menu */
+
+#menu ul li:hover {
+ background:#BDBCB1;
+}
+
+#menu ul ul {
+ display:none;
+ position:absolute;
+ top:100%;
+ left:0;
+ background:#eee;
+ padding:0;
+}
+
+/* items del menu desplegable */
+
+#menu ul ul li {
+ float:none;
+ width:150px
+}
+
+/* enlaces de los items del menu desplegable */
+
+#menu ul ul a {
+ line-height:120%;
+ padding:10px 15px;
+}
+
+/* items del menu desplegable al pasar el ratón */
+
+#menu ul li:hover > ul {
+ display:block;
+}
+
